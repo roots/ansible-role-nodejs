@@ -40,7 +40,6 @@
     NPM_CONFIG_PREFIX: "{{ npm_config_prefix }}"
     NODE_PATH: "{{ npm_config_prefix }}/lib/node_modules"
     NPM_CONFIG_UNSAFE_PERM: "{{ npm_config_unsafe_perm }}"
-    PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
   with_items: "{{ nodejs_npm_global_packages }}"
   tags: ['skip_ansible_lint']
 
